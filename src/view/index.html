@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%= require('html-loader!./layout/html-common.html') %>
+  <title>Document</title>
+</head>
+<body>
+  <%= require('html-loader!./layout/nav.html') %>
+  <%= require('html-loader!./layout/header.html') %>
+  <div class="page-wrap w">
+    <%= require('html-loader!./layout/nav-side.html') %>
+    <div class="content with-nav">灰头土脸了</div>
+  </div>
+
+
+  hello
+  <%= require('html-loader!./layout/footer.html') %>
+</body>
+</html>

@@ -79,8 +79,8 @@ var _mm   = {
     //统一登录处理
     doLogin : function(){
         //登录跳转回原来的页面，页面url可能包含特殊字符，导致url截断，因此需要encodeURIComponent转码
-        window.location.href = './login.html?redirect=' + encodeURIComponent(window.locaton.href);
-
+        // window.location.href = './user-login.html?redirect=' + encodeURIComponent(window.locaton.href);
+        window.location.href = './user-login.html?redirect='+encodeURIComponent(window.location.href);
     },
     goHome : function(){
         window.location.href = './index.html';

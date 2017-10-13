@@ -1,10 +1,10 @@
 {{#navList}}
 {{#isActive}}
 <li class="nav-item active">
-  <a href="" class="link">我的订单</a>
-</li>
 {{/isActive}}
-  <li class="nav-item">
+{{^isActive}}
+<li class="nav-item">
+{{/isActive}}
     <a href="{{href}}" class="link">{{desc}}</a>
   </li>
 {{/navList}}
